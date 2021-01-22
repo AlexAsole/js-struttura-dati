@@ -239,7 +239,6 @@ function powerValue(array) {
   });
   return powerArray;
 }
-const powerArray = powerValue(cards);
 
 function filterPower(array, valuePower) {
   return array.filter((item) => {
@@ -271,10 +270,7 @@ function populateHTML(array, app) {
   });
 }
 
-
-console.log(cards);
-console.log(powerArray);
-
+const powerArray = powerValue(cards);
 populateSelect(powerArray, powerSelect);
 populateSelect(cardTypes, typeSelect)
 populateHTML(cards, cardsContainer);
