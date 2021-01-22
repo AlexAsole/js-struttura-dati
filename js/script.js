@@ -272,7 +272,7 @@ function populateHTML(array, app) {
 
 const powerArray = powerValue(cards);
 populateSelect(powerArray, powerSelect);
-populateSelect(cardTypes, typeSelect)
+populateSelect(cardTypes, typeSelect);
 populateHTML(cards, cardsContainer);
 
 powerSelect.addEventListener('change', function() {
@@ -281,7 +281,7 @@ powerSelect.addEventListener('change', function() {
     populateHTML(cards, cardsContainer);
   } else {
     const filteredArray = filterPower(cards,valueSelected);
-    populateHTML(filteredArray, cardsContainer)
+    populateHTML(filteredArray, cardsContainer);
   }
 });
 
@@ -291,6 +291,6 @@ typeSelect.addEventListener('change', function() {
     populateHTML(cards, cardsContainer);
   } else {
     const filteredArray = filterType(cards,valueSelected);
-    populateHTML(filteredArray, cardsContainer)
+    populateHTML(filteredArray, cardsContainer);
   }
 });
